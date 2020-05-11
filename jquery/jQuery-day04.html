@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jQuery-day04 | Kelvin&#39;s notebook</title>
+    <meta name="description" content="Go big or go home!!!">
+    <link rel="icon" href="/EdmPublicDist/logo.ico">
+    
+    <link rel="preload" href="/EdmPublicDist/assets/css/0.styles.44db3ce0.css" as="style"><link rel="preload" href="/EdmPublicDist/assets/js/app.4f30fd35.js" as="script"><link rel="preload" href="/EdmPublicDist/assets/js/2.53580131.js" as="script"><link rel="preload" href="/EdmPublicDist/assets/js/19.7620d4ce.js" as="script"><link rel="prefetch" href="/EdmPublicDist/assets/js/10.2e2b1a26.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/11.f94ee37c.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/12.80740613.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/13.a29a7635.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/14.9a0f0a50.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/15.d6d42d92.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/16.9e5fc154.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/17.0cd95a0c.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/18.543ae6c6.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/20.a9cdde7e.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/21.cfc75ff7.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/22.c8f6bb5e.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/23.3930e73b.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/24.d91e8a42.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/25.0f9b5db3.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/26.ef72e736.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/3.2c3e58ca.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/4.fae2e8e2.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/5.c11dc402.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/6.57dee2c0.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/7.30460235.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/8.bfc63ddc.js"><link rel="prefetch" href="/EdmPublicDist/assets/js/9.6797a46f.js">
+    <link rel="stylesheet" href="/EdmPublicDist/assets/css/0.styles.44db3ce0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EdmPublicDist/" class="home-link router-link-active"><!----> <span class="site-name">Kelvin's notebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EdmPublicDist/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/EdmPublicDist/jquery/" class="nav-link router-link-active">jQuery</a></div><div class="nav-item"><a href="https://kelvin4869.github.io/FrontEndNav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  前端网站导航
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Kelvin4869" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EdmPublicDist/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/EdmPublicDist/jquery/" class="nav-link router-link-active">jQuery</a></div><div class="nav-item"><a href="https://kelvin4869.github.io/FrontEndNav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  前端网站导航
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Kelvin4869" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EdmPublicDist/jquery/" class="sidebar-link">jQuery-JS语法糖</a></li><li><a href="/EdmPublicDist/jquery/jQuery-day01.html" class="sidebar-link">jQuery-day01</a></li><li><a href="/EdmPublicDist/jquery/jQuery-day02.html" class="sidebar-link">jQuery-day02</a></li><li><a href="/EdmPublicDist/jquery/jQuery-day03.html" class="sidebar-link">jQuery-day03</a></li><li><a href="/EdmPublicDist/jquery/jQuery-day04.html" class="active sidebar-link">jQuery-day04</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#jquery-day04" class="sidebar-link">jQuery-day04</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#层级布局关系" class="sidebar-link">层级布局关系</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#链式编程原理：" class="sidebar-link">链式编程原理：</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#each遍历" class="sidebar-link">each遍历</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#end方法" class="sidebar-link">end方法</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#释放-控制权函数" class="sidebar-link">释放$控制权函数</a></li><li class="sidebar-sub-header"><a href="/EdmPublicDist/jquery/jQuery-day04.html#jq插件-实例方法" class="sidebar-link">JQ插件-实例方法</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="jquery-day04"><a href="#jquery-day04" aria-hidden="true" class="header-anchor">#</a> jQuery-day04</h2> <h2 id="层级布局关系"><a href="#层级布局关系" aria-hidden="true" class="header-anchor">#</a> 层级布局关系</h2> <p>层级注意：</p> <ol><li><p>z-index 层级要生效，这个盒子必须是定位，绝对定位，相对定位，固定定位都行</p></li> <li><p>z-index 受定位父级元素约束。</p></li></ol> <p>约定，可以给定位的元素分层：</p> <ol><li><p>1  - 10    普通定位元素，如下拉菜单，轮播图的左右箭头，小圆点</p></li> <li><p>11 - 20   如：固定的侧边栏，固定的头部</p></li> <li><p>21 - 30   如：模态窗口，登录窗口，会把整个页面遮住</p></li></ol> <h2 id="链式编程原理："><a href="#链式编程原理：" aria-hidden="true" class="header-anchor">#</a> 链式编程原理：</h2> <p>在函数执行完毕后 return this。
+注意：
+JQ大部分函数内部都会返回JQ对象，所以可以继续链式编程。
+哪些不行，举例子？
+.text()     获取文本的时候就不能链式编程。
+.val()      获取的时候
+.css()      获取的时候
+.offset()   获取的时候</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'小明'</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">sayHi</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'你好，我叫'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">sayAge</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我今年'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// var res = obj.sayHi();</span>
+<span class="token comment">// console.log(res);</span>
+obj<span class="token punctuation">.</span><span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sayAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="each遍历"><a href="#each遍历" aria-hidden="true" class="header-anchor">#</a> each遍历</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> numArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">,</span> <span class="token number">55</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// for (var i = 0; i &lt; numArr.length; i++) {</span>
+    <span class="token comment">//     console.log(numArr[i]);</span>
+    <span class="token comment">// }</span>
+    <span class="token comment">/* 1、用 each 遍历数组 */</span>
+    $<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span>numArr<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'小明'</span><span class="token punctuation">,</span>
+        age<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+        sex<span class="token punctuation">:</span> <span class="token string">'男'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">/* 原生JS遍历 */</span>
+    <span class="token comment">// for (var key in obj) {</span>
+    <span class="token comment">//     // console.log(key);</span>
+    <span class="token comment">//     console.log(key, obj[key]);</span>
+    <span class="token comment">// }</span>
+    <span class="token comment">/* 1、JQ 用 each 遍历对象 */</span>
+    $<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     *      each 第二种用法
+     *
+     *          $.each(数组/对象, function(参数1, 参数2){
+     *              // 参数1 和 参数2 可以先到控制台输出，了解功能后再使用。
+     *          })
+     *
+     *      以后学习到 ECMAScript 6：
+     *          也有很多原生JS的遍历方法，如： forEach, filter 等都是遍历函数。
+     *
+     * */</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="end方法"><a href="#end方法" aria-hidden="true" class="header-anchor">#</a> end方法</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* 这里是 this */</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'on'</span><span class="token punctuation">)</span>
+        <span class="token comment">/* 这里变成了兄弟 siblings */</span>
+            <span class="token punctuation">.</span><span class="token function">siblings</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'on'</span><span class="token punctuation">)</span>
+        <span class="token comment">/* end 回退一级，变回来 this */</span>
+            <span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token string">'666'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="释放-控制权函数"><a href="#释放-控制权函数" aria-hidden="true" class="header-anchor">#</a> 释放$控制权函数</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">jQuery</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// console.log($ === jQuery);</span>
+    <span class="token comment">/**
+     *
+     *      no Conflict  直接翻译是 '不冲突' 的意思
+     *      防止 jQuery 的 $ 函数名称和其他库冲突，
+     *      提供释放 $ 控制权的解决方案。
+     *
+     **/</span>
+    <span class="token comment">/* 释放 $ 控制权，用 变量 itcast 保存 JQ 顶级对象 */</span>
+    <span class="token keyword">var</span> itcast <span class="token operator">=</span> jQuery<span class="token punctuation">.</span><span class="token function">noConflict</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>$<span class="token punctuation">)</span><span class="token punctuation">;</span>                     <span class="token comment">// 你老大写的$函数</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>itcast <span class="token operator">===</span> jQuery<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="jq插件-实例方法"><a href="#jq插件-实例方法" aria-hidden="true" class="header-anchor">#</a> JQ插件-实例方法</h2> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lib/jquery-1.12.4.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token comment">// console.log($);</span>
+            console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>$<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">/**
+             *      $ 或 jQuery
+             *          既是 函数，又是 对象
+             *
+             *      $ 对象身上有很多方法  -  静态方法
+             *          $.each()
+             *          $.trim()
+             *          $.extend()          合并(拓展)对象
+             *
+             *          以后PHP时候用到的
+             *          $.ajax()  $.get()  $.post()
+             *
+             *      $()  函数也有很多方法 -  实例方法，$() 选中某个元素后才能调用
+             *          我们大部分学习到的是实例方法，需要先 $() 选中才能调用
+             *
+             *
+             * */</span>
+
+            <span class="token comment">/* 自己制作插件 - 用沙箱函数套起来更安全，避免冲突和变量污染 */</span>
+            <span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">$</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">/* 给 jQuery 原型添加方法 - 需要实例JQ对象后，再使用 */</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>$<span class="token punctuation">.</span>fn <span class="token operator">===</span> <span class="token class-name">$</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// true</span>
+                $<span class="token punctuation">.</span>fn<span class="token punctuation">.</span><span class="token function-variable function">aaaa</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'aaaa'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>jQuery<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">/* 调用插件 */</span>
+            <span class="token comment">/* $('div')  JQ实例对象，调用 aaaa 方法 */</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">aaaa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>盒子<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EdmPublicDist/jquery/jQuery-day03.html" class="prev">
+          jQuery-day03
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/EdmPublicDist/assets/js/app.4f30fd35.js" defer></script><script src="/EdmPublicDist/assets/js/2.53580131.js" defer></script><script src="/EdmPublicDist/assets/js/19.7620d4ce.js" defer></script>
+  </body>
+</html>
